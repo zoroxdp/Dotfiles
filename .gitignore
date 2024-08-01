@@ -1,0 +1,12 @@
+lazygit
+.bash_history
+.bash_logout
+.lesshst
+.motd_shown
+.viminfo
+.sudo_as_admin_successful
+.rustup
+.cache
+.cargo
+.nvm
+.local
