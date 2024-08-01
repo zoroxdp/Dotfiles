@@ -1,3 +1,5 @@
+.gitignore
+.git-credentials
 lazygit
 .bash_history
 .bash_logout
