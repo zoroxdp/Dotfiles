@@ -33,13 +33,13 @@ require("lazy").setup({
         })
       end,
     },
+    { "ggandor/leap.nvim" },
     {
       "kawre/leetcode.nvim",
-      build = ":TSUpdate html",
       dependencies = {
         "nvim-tree/nvim-web-devicons",
       },
-      opts = {},
+      opts = { arg = leet_arg },
     },
     {
       "kylechui/nvim-surround",
@@ -53,7 +53,6 @@ require("lazy").setup({
     },
     { "CRAG666/code_runner.nvim", config = true },
     { "numToStr/comment.nvim" },
-    { "uga-rosa/ccc.nvim" },
     {
       "folke/todo-comments.nvim",
       dependencies = { "nvim-lua/plenary.nvim" },

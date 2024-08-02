@@ -1,6 +1,10 @@
 .gitignore
 .git-credentials
 lazygit
+.landscape
+.npm
+.node_repl_history
+.codeium
 .bash_history
 .bash_logout
 .lesshst

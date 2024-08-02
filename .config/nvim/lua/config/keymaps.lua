@@ -6,6 +6,9 @@ keymap.set({ "n", "x" }, ";", ":")
 -- Turn the current word into title case
 keymap.set("i", "<c-t>", "<Esc>b~lea")
 
+-- Remove seach highlights
+keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", { desc = "no highlight" })
+
 keymap.set("n", "<leader>p", "m`o<ESC>p``", { desc = "paste below current line" })
 keymap.set("n", "<leader>P", "m`O<ESC>p``", { desc = "paste above current line" })
 
@@ -25,6 +28,7 @@ keymap.set("n", "<leader>llx", "<cmd>Leet reset<cr>", { desc = "Leet Reset" })
 keymap.set("n", "<leader>lls", "<cmd>Leet submit<cr>", { desc = "Leet Submit" })
 keymap.set("n", "<leader>llc", "<cmd>Leet console<cr>", { desc = "Leet Console" })
 keymap.set("n", "<leader>llo", "<cmd>Leet open<cr>", { desc = "Leet Open" })
+keymap.set("n", "<leader>lli", "<cmd>Leet info<cr>", { desc = "Leet Info" })
 
 -- Competitest Mappings
 keymap.set("n", "<leader>cpr", "<cmd>CompetiTest run<cr>", { desc = "Run" })

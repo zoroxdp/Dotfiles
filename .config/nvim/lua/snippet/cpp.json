@@ -1,0 +1,1 @@
+{"header":{"prefix":"header","body":["#include<bits\/stdc++.h>","using namespace std;"]},"fasttt":{"prefix":"fasttt","body":["ios_base::sync_with_stdio(false);","std::cin.tie(0);"]}}
