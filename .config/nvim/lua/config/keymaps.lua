@@ -60,7 +60,7 @@ keymap.set("n", "^", "g^")
 keymap.set("n", "0", "g0")
 
 -- Go to the beginning and end of current line quickly
-keymap.set({ "n", "i", "v" }, "<A-h>", "<HOME>")
+keymap.set({ "n", "i", "v" }, "<A-h>", "^")
 keymap.set({ "n", "i", "v" }, "<A-l>", "<END>")
 
 -- Exit Insert/Selection Mode quickly

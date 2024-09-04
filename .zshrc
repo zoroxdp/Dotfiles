@@ -11,7 +11,6 @@ plugins=( git sudo zsh-autosuggestions zsh-syntax-highlighting )
 source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
 
 # Check archlinux plugin commands here
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
@@ -27,7 +26,6 @@ export VISUAL=nvim
 alias ls='eza -a --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
-alias z="zoxide"
 alias leetcode="nvim leetcode.nvim"
 alias pn="pnpm"
 alias pnx="pnpx"
@@ -59,3 +57,6 @@ alias j="jj && clear"
 neofetch
 
 export PATH=$PATH:/home/dp/.spicetify
+eval "$(zoxide init zsh)"
+#screenfetch
+#fastfetch
