@@ -33,11 +33,22 @@ alias lg="lazygit"
 alias ld="lazydocker"
 alias f="fzf --preview='bat --color=always {}' --bind ctrl-p:preview-page-up,ctrl-n:preview-page-down"
 alias fn='nvim "$(f)"'
+alias n="nvim"
+alias tt="ttyper"
 alias t="tmux"
 alias ta='tmux attach -t'
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --follow --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --hidden --strip-cwd-prefix --type d --follow --exclude .git"
+_fzf_compgen_path() {
+  fd --hidden --exclude ".git" . "$1"
+}
+_fzf_compgen_dir() {
+  fd --type=d --hidden --exclude ".git" . "$1"
+}
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -58,5 +69,5 @@ neofetch
 
 export PATH=$PATH:/home/dp/.spicetify
 eval "$(zoxide init zsh)"
-#screenfetch
-#fastfetch
+eval $(thefuck --alias)
+eval $(thefuck --alias fk)

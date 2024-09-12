@@ -17,6 +17,28 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     {
+      "TobinPalmer/rayso.nvim",
+      cmd = { "Rayso" },
+      config = function()
+        require("rayso").setup({
+          base_url = "https://ray.so/",
+          open_cmd = "io.github.zen_browser.zen",
+          options = {
+            background = true,
+            dark_mode = true,
+            logging_path = "",
+            logging_file = "rayso",
+            logging_enabled = false,
+            padding = 32,
+            ---@diagnostic disable-next-line: assign-type-mismatch
+            theme = "tailwind",
+            title = "Untitled",
+          },
+        })
+      end,
+    },
+    { "matbme/JABS.nvim" },
+    {
       "xeluxee/competitest.nvim",
       dependencies = "MunifTanjim/nui.nvim",
       config = function()

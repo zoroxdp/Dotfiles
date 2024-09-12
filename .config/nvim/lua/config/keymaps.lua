@@ -52,6 +52,7 @@ keymap.set("n", "<leader>w", "<cmd>update<cr>", { silent = true, desc = "save bu
 
 keymap.set("n", "y", '"+y', { silent = true })
 keymap.set("v", "y", '"+y', { silent = true })
+keymap.set("n", "<leader>bb", "<cmd>JABSOpen<cr>", { desc = "Switch Buffer" })
 
 -- Move the cursor based on physical lines, not the actual lines.
 keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
